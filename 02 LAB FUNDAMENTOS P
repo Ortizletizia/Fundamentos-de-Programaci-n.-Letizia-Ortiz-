@@ -1,0 +1,18 @@
+//Doctora, la librerC-a que nos proporcionC3, me salC-a como error. Adicionalmente, no se pudo compilar con B(void mainB(. 
+#include <iostream>
+#include <cstddef>
+using namespace std;
+int base;
+int altura;
+int area;
+int
+main ()
+{
+  cout << "Ingrese la medida de la base:" << endl;
+  cin >> base;
+  cout << "Ingrese la medida de la altura: " << endl;
+  cin >> altura;
+  area = (base * altura) / 2;
+  cout << "El area de su figura es: " << area << endl;
+  return 0;
+}
