@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float sueldobruto, IVA, AFP, afpemp, ivaemp;
+	IVA=0.13;
+	AFP=0,121;
+    cout << "Ingrese el sueldo bruto: "  << endl;
+    cin >>sueldobruto; 
+	ivaemp = sueldobruto * IVA; 
+	afpemp = sueldobruto * AFP; 
+	cout << "El descuento de AFP es:" << afpemp <<endl;  
+	cout << "El descuento de IVA es:" << ivaemp;
+    return 0;
+}
