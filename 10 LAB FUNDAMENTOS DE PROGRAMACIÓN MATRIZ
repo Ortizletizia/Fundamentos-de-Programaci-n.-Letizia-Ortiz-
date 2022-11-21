@@ -1,0 +1,33 @@
+#include <iostream>
+#define MAX 20
+using namespace std;
+void mostrar (int grupo2[MAX][MAX], int n, int m);
+int main()
+{
+    int numeros[MAX][MAX], filas, columna;
+    cout<<"Introduzca el numero de filas: ";
+    cin>>filas;
+    cout<<"Introduzca el numero de columnas: ";
+    cin>>columna;
+    for(int i=0; i<filas; i++)
+    {
+        for(int m=0; m<columna; m++)
+        {
+            cout<< "Introduzca el numero: ["<<i<<"] ["<<m<<"]";
+            cin>>numeros[i][m];
+        }
+    }
+    cout<<"La matriz es: "<<endl; 
+    mostrar(numeros, filas, columna);
+    cout<<" "<<endl;
+    return 0;
+}
+
+void mostrar (int numeros [MAX][MAX], int filas, int columna){
+    for(int i=0; i<filas; i++){
+        for(int m=0; m<columna; m++){
+            cout<<numeros[i][m]<<" ";
+        }
+        cout<<" "<<endl;
+    }
+}
