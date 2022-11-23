@@ -1,0 +1,57 @@
+#include <iostream>
+
+using namespace std;
+
+float suma(float x, float y);
+float resta(float x, float y);
+
+int main()
+{
+    int op;
+    float a=0, b=0, c=0;
+    
+    cout<<"***  Calculadora Sencilla ****"<<endl;
+    cout<<"Ingrese el primer numero ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero ";
+    cin>>b;
+    
+    do{
+        cout<<"***  Calculadora Sencilla ****"<<endl;
+        cout<<"1.- Suma"<<endl;
+        cout<<"2.- Resta"<<endl;
+        cout<<"3.- Salir"<<endl;
+        cout<<"Elije una opcion ";
+        cin>>op;
+        switch(op){
+        case 1:
+            c=suma(a,b);
+            cout<<"La suma es: "<< c <<endl;
+            break;
+        case 2:
+            c=resta(a,b);
+            cout<<"La resta es: "<< c <<endl;
+            break;
+   
+        }
+    }while(op>=1 && op<=2);
+
+    return 0;
+}
+
+
+float suma(float x, float y){
+    float r=0;
+    r=x+y;
+    return r;
+    /*****/
+    //return x+y;
+}
+
+float resta(float x, float y){
+    float r=0;
+    r=x-y;
+    return r;
+    /*****/
+    //return x-y;
+}
