@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+void impares(int a, int b);
+
+int main(){
+    int a, b;
+    cout<<"Ingrese el primer valor: "; cin>>a;
+    cout<<"Ingrese el segundo valor: "; cin>>b;
+    cout<<"La serie de impares es: ";
+    impares(a,b);
+    return 0;
+}
+
+void impares(int a, int b){
+    int x, y;
+    x = max(a,b);
+    y = min(a,b);
+    for (int i = y; i>=y && i<=x; i++){
+        if(i%2!=0){
+            cout<<i<<", ";
+        }
+    }
+}
