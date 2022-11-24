@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+int suma (int, int, int);
+int resta (int, int, int);
+int multiplicacion (int, int, int);
+int main() {
+    int a, b, c;
+   cout << "Ingrese el primer numero: "; cin >>a;
+   cout << "Ingrese el segundo numero: "; cin >> b;
+   cout << "Ingrese el tercer numero: "; cin >> c;
+
+   cout << "Suma: " <<  suma (a, b, c) << endl;
+   cout << "Resta: " <<  resta (a, b, c) << endl;
+   cout << "Multiplicacion: " <<  multiplicacion (a, b, c) << endl;
+
+
+    return 0;
+}
+int suma (int a, int b, int c) {
+    int s = a + b + c;
+    if (s < 0) {
+        return s*(-1);
+    } else {
+        return s;
+    }
+}
+int resta (int a, int b, int c) {
+    int r = a - b - c;
+    if (r < 0) {
+        return r*(-1);
+    } else {
+        return r;
+    }
+}
+int multiplicacion (int a, int b, int c) {
+    int m = a * b * c;
+    if (m < 0) {
+        return m*(-1);
+    } else {
+        return m;
+    }
+}
