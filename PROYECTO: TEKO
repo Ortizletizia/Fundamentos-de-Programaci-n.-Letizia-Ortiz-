@@ -184,3 +184,4 @@ void signup(string usuario[], string contrasena[], string correo[], string NIT[]
     cout << "Crear contrasena: "; cin >> contrasena[i];
 
 }
+
