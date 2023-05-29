@@ -1,0 +1,47 @@
+#include <iostream>
+#include <deque>
+
+int main() {
+    std::deque<int> bicola;
+
+    // Insertar elementos por el frente
+    bicola.push_front(1);
+    bicola.push_front(2);
+    bicola.push_front(3);
+
+    // Insertar elementos por el final
+    bicola.push_back(4);
+    bicola.push_back(5);
+    bicola.push_back(6);
+
+    // Acceder a los elementos de la bicola
+    std::cout << "Elementos de la bicola: ";
+    for (int elem : bicola) {
+        std::cout << elem << " ";
+    }
+    std::cout << std::endl;
+
+    // Eliminar elementos por el frente
+    bicola.pop_front();
+    bicola.pop_front();
+
+    // Eliminar elementos por el final
+    bicola.pop_back();
+
+    // Acceder al primer y último elemento
+    std::cout << "Primer elemento: " << bicola.front() << std::endl;
+    std::cout << "Último elemento: " << bicola.back() << std::endl;
+
+    // Verificar si la bicola está vacía
+    if (bicola.empty()) {
+        std::cout << "La bicola está vacía." << std::endl;
+    } else {
+        std::cout << "La bicola no está vacía." << std::endl;
+    }
+
+    // Tamaño de la bicola
+    std::cout << "Tamaño de la bicola: " << bicola.size() << std::endl;
+
+    return 0;
+}
+
